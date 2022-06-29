@@ -1,9 +1,10 @@
-import Form from "../components/Form";
-import List from "../components/List";
-import Stopwatch from "../components/Stopwatch";
+import Form from "components/Form";
+import List from "components/List";
+import Stopwatch from "components/Stopwatch";
+import { useState } from "react";
+import { TasksListProps } from "types/tasks";
 import style from './app.module.scss';
-import {useState} from "react";
-import {TasksListProps} from "../types/tasks";
+
 
 export default function App() {
   const [tasks, setTasks] = useState<TasksListProps[]>([])
@@ -23,7 +24,7 @@ export default function App() {
       setTaskSelected(undefined)
       setTasks(oldTasks => oldTasks.map(oldTask => {
         if (oldTask.id === taskSelected.id) {
-          return {...oldTask, selected: false, completed: true}
+          return { ...oldTask, selected: false, completed: true }
         }
 
         return oldTask
@@ -33,9 +34,9 @@ export default function App() {
 
   return (
     <main className={style.AppStyle}>
-      <Form setTasks={setTasks}/>
-      <List tasks={tasks} selectTask={selectTask}/>
-      <Stopwatch taskSelected={taskSelected} finishTask={finishTask}/>
+      <Form setTasks={setTasks} />
+      <List tasks={tasks} selectTask={selectTask} />
+      <Stopwatch taskSelected={taskSelected} finishTask={finishTask} />
     </main>
   );
 }
