@@ -10,7 +10,7 @@ interface ButtonProps {
 
 export default function Button({onClick, type, children}: ButtonProps) {
   return (
-    <button onClick={onClick} type={type} className={style.button}>{children}</button>
+    <button data-testid="button-test" onClick={onClick} type={type} className={style.button}>{children}</button>
   )
 }
 
