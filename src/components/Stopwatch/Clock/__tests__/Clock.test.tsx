@@ -1,11 +1,13 @@
+import { render } from "@testing-library/react";
 import Clock from "../";
-import {render} from "@testing-library/react";
 
 
 describe(`Tests from ${Clock.name}`, () => {
-  it('Should be possible to render the Clock component when the page is rendered',() => {
-    render(
+  it('Should be possible to snapshot the Clock component when the page is rendered', () => {
+    const { container } = render(
       <Clock time={10} />
     )
+
+    expect(container).toMatchSnapshot()
   })
 })

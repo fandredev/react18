@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests from Clock Should be possible to snapshot the Clock component when the page is rendered 1`] = `
+<div>
+  <span
+    class="clockNumber"
+  >
+    0
+  </span>
+  <span
+    class="clockNumber"
+  >
+    0
+  </span>
+  <span
+    class="clockDivision"
+  >
+    :
+  </span>
+  <span
+    class="clockNumber"
+  >
+    1
+  </span>
+  <span
+    class="clockNumber"
+  >
+    0
+  </span>
+</div>
+`;

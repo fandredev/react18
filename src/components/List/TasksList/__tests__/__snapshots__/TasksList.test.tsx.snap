@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test component: TasksList  Should be possible to snapshot the TasksList component when the page is rendered 1`] = `
+<div>
+  <li
+    class="item"
+  >
+    <h3>
+      Aprender Vue
+    </h3>
+    <span>
+      01:00:00
+    </span>
+  </li>
+</div>
+`;

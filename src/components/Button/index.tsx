@@ -1,4 +1,4 @@
-import React, {ReactNode} from 'react'
+import { ReactNode } from 'react'
 import style from "./button.module.scss"
 
 interface ButtonProps {
@@ -8,9 +8,9 @@ interface ButtonProps {
 }
 
 
-export default function Button({onClick, type, children}: ButtonProps) {
+export default function Button({ onClick, type, children }: ButtonProps) {
   return (
-    <button data-testid="button-test" onClick={onClick} type={type} className={style.button}>{children}</button>
+    <button onClick={onClick} type={type} className={style.button}>{children}</button>
   )
 }
 

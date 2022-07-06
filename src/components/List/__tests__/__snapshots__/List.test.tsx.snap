@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test component: List Should be possible to snapshot the Test component when the page is rendered 1`] = `
+<div>
+  <aside
+    class="listTasks"
+  >
+    <h2>
+      Você ainda não adicionou algum estudo hoje.
+    </h2>
+    <ul />
+  </aside>
+</div>
+`;

@@ -9,7 +9,7 @@ interface ListTasksProps extends TasksListProps {
 
 export default function TasksList({ task, time, id, selected, completed, selectTask }: ListTasksProps) {
   return (
-    <li data-testid="tasks-list-item" className={classNames({
+    <li className={classNames({
       [styles.item]: true,
       [styles.listSelected]: selected,
       [styles.listCompleted]: completed

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test component: Button Should be possible to snapshot the Button component when the page is rendered 1`] = `
+<div>
+  <button
+    class="button"
+    type="button"
+  >
+    Começar
+  </button>
+</div>
+`;
