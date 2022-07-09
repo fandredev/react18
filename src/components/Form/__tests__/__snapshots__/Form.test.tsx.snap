@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Component: Form Should be possible to snapshot the Button component when the page is rendered 1`] = `
+<div>
+  <form
+    class="newTaskForm"
+  >
+    <div
+      class="inputContainer"
+    >
+      <label
+        for="task"
+      >
+        Adicione um novo estudo
+      </label>
+      <input
+        id="task"
+        name="task"
+        placeholder="O que você quer estudar"
+        required=""
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="inputContainer"
+    >
+      <label
+        for="time"
+      >
+        Tempo
+      </label>
+      <input
+        data-testid="input-time"
+        id="time"
+        max="01:30:00"
+        min="00:00:00"
+        name="time"
+        required=""
+        step="1"
+        type="time"
+        value="00:00:00"
+      />
+    </div>
+    <button
+      class="button"
+      type="submit"
+    >
+      Adicionar
+    </button>
+  </form>
+</div>
+`;

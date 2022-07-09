@@ -42,7 +42,7 @@ export default function Form({ setTasks }: FormProps) {
         <label htmlFor="time">
           Tempo
         </label>
-        <input onChange={event => setTime(event.target.value)} value={time} type="time" step="1" name="time" id="time"
+        <input data-testid="input-time" onChange={event => setTime(event.target.value)} value={time} type="time" step="1" name="time" id="time"
           min="00:00:00" max="01:30:00" required />
       </div>
       <Button type="submit">Adicionar</Button>
